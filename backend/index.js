@@ -73,6 +73,7 @@ app.post("/create-account", async (req, res) => {
 //login
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
+  // console.log(req.body);
 
   if (!email) {
     return res.status(400).json({ message: "Email is required." });

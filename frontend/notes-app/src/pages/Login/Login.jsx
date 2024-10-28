@@ -36,7 +36,7 @@ export default function Login() {
       if (response.data && response.data.accessToken) {
         toast.success("Login Successfully.");
         localStorage.setItem("token", response.data.accessToken);
-        navigate("/dashboard");
+        navigate("/");
       }
     } catch (error) {
       console.log(error);
